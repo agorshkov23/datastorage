@@ -12,14 +12,29 @@ import java.time.OffsetDateTime;
 @AllArgsConstructor
 public class ApiMeasure {
 
+    /**
+     * Идентификатор измерения.
+     */
     private Long id;
 
+    /**
+     * Идентификатор датчика.
+     */
     @NotNull
     private String sensorId;
 
+    /**
+     * Дата и время измерения.
+     */
     private OffsetDateTime timestamp;
 
+    /**
+     * Дата и время регистрации в datastorage.
+     */
     private OffsetDateTime dataStorageTimestamp;
 
+    /**
+     * Данные.
+     */
     private JsonNode data;
 }
