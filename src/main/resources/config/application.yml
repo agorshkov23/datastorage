@@ -1,3 +1,9 @@
+datastorage:
+  service:
+    measure:
+      active: true
+      max-page-size: 250
+
 spring:
   jpa:
     properties:
